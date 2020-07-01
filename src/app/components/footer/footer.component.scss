@@ -1,0 +1,66 @@
+footer {
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+
+.column {
+    text-align: center;
+}
+  
+footer a {
+    color: #aaa;
+    
+  }
+  
+footer a:hover {
+    color: #fff;
+  }
+  
+footer h3 {
+    margin: 30px 0 20px;
+  }
+  
+footer .column li{
+    display: inline-block;
+    border: 1px;
+    border-left:1px solid black;
+    padding: 0 26px;
+    
+  }
+  
+footer .socila-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+  }
+  
+footer .socila-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+
+  }
+  
+footer .socila-list li:hover {
+    opacity: 1;
+  }
+  
+footer .img-thumbnail {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+  }
+  
+footer .copyright {
+    padding: 15px 0;
+    background: darkgray;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+footer .copyright span {
+    color: white;
+  }
