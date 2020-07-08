@@ -13,6 +13,8 @@ import { FeaturedgamesComponent } from './components/featuredgames/featuredgames
 import { ArticlesComponent } from './components/articles/articles.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { AboutComponent } from './components/about/about.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
     FeaturedgamesComponent,
     ArticlesComponent,
     MainPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
