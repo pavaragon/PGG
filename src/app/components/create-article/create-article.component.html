@@ -1,0 +1,77 @@
+<div class="mt-5 mb-5 container">
+        <div class="row">
+            <h1 class="mont">Create New Game Article</h1>
+        </div>
+
+        <div class="row">
+    
+            <div class="mb-md-0 mb-5 mont">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <div class="row">
+    
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.title" type="text" id="title" name="title" class="form-control">
+                                <label for="title" class="">Title</label>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.ageRating" type="url" id="rating" name="rating" class="form-control">
+                                <label for="rating" class="">Rating</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.imageUrl" type="text" id="imageUrl" name="imageUrl" class="form-control">
+                                <label for="imageUrl" class="">Game Cover</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.createdOn" type="date" id="date" name="date" class="form-control">
+                                <label for="date" class="">Date</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.link1" type="url" id="link1" name="link1" class="form-control">
+                                <label for="link1" class="">Buy link 1</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input [(ngModel)]="gameArticle.link2" type="url" id="link2" name="link2" class="form-control">
+                                <label for="link2" class="">Buy link 2</label>
+                            </div>
+                        </div>
+    
+                    </div>
+          
+                    <div class="row">
+    
+                        <div class="col-md-12 mont ">
+    
+                            <div class="md-form">
+                                <textarea [(ngModel)]="gameArticle.details" type="text" id="details" name="details" rows="6" class="form-control md-textarea"></textarea>
+                                <label for="details">Game details</label>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </form>
+    
+                <div class="text-center text-md-left">
+                    <button class="btn btn-sm btn-dark " [disabled]="!gameArticle.title && !gameArticle.details && !gameArticle.ageRating && !gameArticle.imageUrl && !gameArticle.createdOn && !gameArticle.link1 && !gameArticle.link2 " (click)="onPost()" >Post Article</button>
+                </div>
+                <div class="status"></div>
+            </div>
+        
+</div>

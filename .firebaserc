@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "parent-gaming-guide": {
+      "hosting": {
+        "PGG": [
+          "parent-gaming-guide"
+        ]
+      }
+    }
+  }
+}
