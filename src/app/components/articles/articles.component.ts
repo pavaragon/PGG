@@ -10,14 +10,11 @@ import { GameArticle } from 'src/app/models/gameArticle';
 export class ArticlesComponent implements OnInit {
 
   displayGames: GameArticle[];
+  selectedGame: GameArticle;
 
-  showgame(){
-    var gameTitle = document.getElementById('gameTitle').textContent;
-    if ( gameTitle = gameTitle){ /// THIS IS WHERE displayGames should match??)
-    console.log("game clicked is", gameTitle)
-    };
+  showgame(clickedGame){
+    this.selectedGame = clickedGame;
   
-    console.log(this.displayGames)
   };
 
   

@@ -7,9 +7,11 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+  title: any;
+
   constructor(firestore: AngularFirestore) {
 
+    
 
   }
 }

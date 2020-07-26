@@ -24,6 +24,7 @@ import { CreateArticleComponent } from './components/create-article/create-artic
 import { AccountComponent } from './components/account/account.component';
 import { AllArticlesComponent } from './components/all-articles/all-articles.component';
 import { ViewGamesComponent } from './components/view-games/view-games.component';
+import { UserService } from './services/user.service'; 
 
 
 var firebaseConfig = {
@@ -63,7 +64,7 @@ var firebaseConfig = {
     AngularFireAnalyticsModule,
     AngularFirestoreModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

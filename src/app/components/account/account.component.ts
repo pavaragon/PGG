@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-account',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public userService: UserService,
+    public router: Router,
+    public ngZone: NgZone
+  ) { }
 
   ngOnInit(): void {
   }
