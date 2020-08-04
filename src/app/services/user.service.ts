@@ -35,7 +35,8 @@ export class UserService {
     })
   }
   
-  // Returns true when user is looged in and email is verified
+
+  // Returns true when user is looged in 
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user !== null) ? true : false;
@@ -64,7 +65,7 @@ export class UserService {
       email: user.email,
       displayName: user.displayName,
       photoURL: user.photoURL,
-      emailVerified: user.emailVerified
+      emailVerified: user.emailVerified,
     }
     return userRef.set(userData, {
       merge: true

@@ -22,7 +22,6 @@ import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreateArticleComponent } from './components/create-article/create-article.component';
 import { AccountComponent } from './components/account/account.component';
-import { AllArticlesComponent } from './components/all-articles/all-articles.component';
 import { ViewGamesComponent } from './components/view-games/view-games.component';
 import { UserService } from './services/user.service'; 
 
@@ -53,7 +52,6 @@ var firebaseConfig = {
     LoginComponent,
     CreateArticleComponent,
     AccountComponent,
-    AllArticlesComponent,
     ViewGamesComponent
   ],
   imports: [
